@@ -1,0 +1,267 @@
+.training {
+  border-bottom: 1px solid rgba($color-navy-blue, 0.2);
+
+  @include vp-1199 {
+    border-color: transparent;
+  }
+
+  h2 {
+    position: relative;
+    margin: 0 0 27px;
+    padding-top: 19px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+
+    @include vp-1199 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 50px;
+      padding-top: 15px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 30px;
+      padding-top: 7px;
+    }
+
+    &::after {
+      content: attr(data-header);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 55px;
+      opacity: 0.03;
+
+      @include vp-1199 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      @include vp-767 {
+        font-size: 26px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  p {
+    max-width: 73%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 47px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.training__heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.training__trainers {
+  h3 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.training__activity-list {
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 32px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 141px;
+    row-gap: 91px;
+    grid-auto-flow: column;
+  }
+
+  @include vp-767 {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    grid-auto-flow: row;
+  }
+}
+
+.training__activity-item {
+  display: flex;
+  align-items: start;
+  position: relative;
+
+  @include vp-767 {
+    padding-left: 37px;
+  }
+
+  &::before {
+    @include vp-767 {
+      content: "";
+      background-color: $color-navy-blue;
+      position: absolute;
+      top: 25px;
+      left: 7px;
+      width: 1px;
+      height: 150%;
+    }
+  }
+
+  &:last-child::before {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  p {
+    max-width: 240px;
+    padding-left: 15px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+}
+
+.training__activity-item:nth-child(4n + 2),
+.training__activity-item:nth-child(4n + 3) {
+  @include vp-1199 {
+    grid-column: -2/-1;
+  }
+}
+
+.training__activity-item:nth-child(4n + 3) {
+  &::before {
+    @include vp-1199 {
+      content: "";
+      background-color: $color-navy-blue;
+      position: absolute;
+      bottom: 55px;
+      left: 7px;
+      width: 1px;
+      height: 67px;
+    }
+  }
+}
+
+.training__activity-item:nth-child(4n + 1) {
+  &::before {
+    @include vp-1199 {
+      content: "";
+      background-color: $color-navy-blue;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: calc(100% + 141px);
+      height: 1px;
+    }
+
+    @include vp-767 {
+      bottom: unset;
+      top: 25px;
+      left: 7px;
+      width: 1px;
+      height: 150%;
+    }
+  }
+}
+
+.training__activity-item:nth-child(4n + 4) {
+  &::before {
+    @include vp-1199 {
+      content: "";
+      background-color: $color-navy-blue;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: calc(100% + 141px);
+      height: 1px;
+    }
+
+    @include vp-767 {
+      top: 25px;
+      left: 7px;
+      width: 1px;
+      height: 150%;
+    }
+  }
+}
+
+.training__activity-item::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #0266c1;
+  border-radius: 50%;
+
+  @include vp-1199 {
+    top: auto;
+    bottom: -22px;
+    transform: translateY(0);
+  }
+
+  @include vp-767 {
+    top: 15px;
+    bottom: auto;
+  }
+}
+
+.training__activity-item:nth-child(4n + 3)::after,
+.training__activity-item:nth-child(4n + 4)::after {
+  @include vp-1199 {
+    top: -22px;
+    bottom: auto;
+  }
+
+  @include vp-767 {
+    top: 15px;
+    bottom: auto;
+  }
+}

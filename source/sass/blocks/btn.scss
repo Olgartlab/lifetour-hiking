@@ -1,7 +1,7 @@
 .btn {
   display: inline-flex;
   padding: 17px 12px;
-
+  justify-content: center;
   color: $color-default-white;
 
   background-color: $color-navy-blue;
@@ -15,12 +15,26 @@
   }
 
   &:disabled {
-    opacity: 0.2;
-
+    opacity: 0.1;
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:hover {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 1px $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 1px $color-resolution-blue;
+  }
+
+  &:active {
+    box-shadow: none;
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
   }
 }

@@ -1,0 +1,72 @@
+.trainers__swiper {
+  padding: 30px 30px 49px;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.trainers__slide {
+  padding: 20px;
+  max-width: 278px;
+  height: auto;
+  border: 1px solid $color-default-white;
+  background: $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+}
+
+.trainers__slide-img {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.trainers__text {
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.trainers__slide-link {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  color: $color-primary;
+
+  &:disabled {
+    border: 1px solid $color-disabled;
+    color: $color-disabled;
+  }
+
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-primary;
+  }
+
+  &:active {
+    border: 1px solid $color-navy-blue;
+    background-color: $color-navy-blue;
+    color: $color-default-white;
+  }
+}
+
+.trainers__name-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    max-width: 145px;
+  }
+}

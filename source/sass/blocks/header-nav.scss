@@ -1,0 +1,31 @@
+.header-nav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 31px;
+}
+
+.header-nav__link {
+  color: inherit;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  &:focus-visible {
+    text-decoration: none;
+    outline: 1px solid;
+    outline-color: inherit;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}

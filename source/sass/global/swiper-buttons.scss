@@ -1,0 +1,44 @@
+.swiper-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  width: 78px;
+  height: 35px;
+}
+
+.swiper-button {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  color: $color-default-white;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+  outline: none;
+  transition: all $trans-default;
+
+  &:disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 1px $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 1px $color-resolution-blue;
+  }
+
+  &:active {
+    box-shadow: none;
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+}
