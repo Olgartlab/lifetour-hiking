@@ -1153,6 +1153,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+/* stylelint-disable */
 /* required styles */
 .leaflet-pane,
 .leaflet-tile,
@@ -1561,7 +1562,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* zoom control */
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
-  font: bold 18px "Lucida Console", "Monaco", monospace;
+  font: 700 18px "Lucida Console", "Monaco", monospace;
   text-indent: 1px;
 }
 
@@ -2323,8 +2324,12 @@ button,
   color: #2d383f;
 }
 
+.header__logo-link {
+  color: #ffffff;
+}
+
 .header__logo-link svg {
-  fill: #ffffff;
+  fill: currentColor;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -2341,23 +2346,21 @@ button,
   }
 }
 
-.header.is-open .header__logo-link svg {
-  fill: #2d383f;
+.header.is-open .header__logo-link {
+  color: #2d383f;
 }
-.header.is-open .header__logo-link:disabled svg {
+.header.is-open .header__logo-link:disabled {
   opacity: 0.1;
   pointer-events: none;
 }
-.header.is-open .header__logo-link:hover svg {
+.header.is-open .header__logo-link:hover {
   fill: #1c3374;
 }
 .header.is-open .header__logo-link:focus-visible {
   outline: none;
-}
-.header.is-open .header__logo-link:focus-visible svg {
   fill: #1c3374;
 }
-.header.is-open .header__logo-link:active svg {
+.header.is-open .header__logo-link:active {
   fill: #0266c1;
 }
 
@@ -2521,12 +2524,17 @@ button,
   color: #ffffff;
 }
 
+.hero__slide.swiper-slide-active {
+  visibility: visible;
+}
+
 .hero__slide {
   position: relative;
   min-height: 800px;
   background-size: cover;
   height: auto;
   background-color: #45628b;
+  visibility: hidden;
 }
 @media (max-width: 1199px) {
   .hero__slide {
@@ -2770,7 +2778,7 @@ button,
 }
 
 .hero__swiper .hero__swiper-pagination {
-  position: absolute;
+  position: relative;
   bottom: 97px;
   width: 100%;
   height: 0;
@@ -3746,7 +3754,7 @@ button,
     max-width: 100%;
   }
 }
-.about__background-img img, .about__background-img picture {
+.about__background-img img {
   width: 100%;
 }
 
@@ -3933,20 +3941,20 @@ button,
   }
 }
 
-.big-wrapper {
+.reviews__big-wrapper {
   padding-left: 120px;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
 @media (max-width: 1199px) {
-  .big-wrapper {
+  .reviews__big-wrapper {
     padding-left: 45px;
     max-width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .big-wrapper {
+  .reviews__big-wrapper {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -4229,7 +4237,7 @@ button,
     max-width: 100%;
   }
 }
-.advantages__slide h4 {
+.advantages__slide h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -4237,13 +4245,13 @@ button,
   margin-bottom: 15px;
 }
 @media (max-width: 1199px) {
-  .advantages__slide h4 {
+  .advantages__slide h3 {
     font-size: 16px;
     line-height: 16px;
   }
 }
 @media (max-width: 767px) {
-  .advantages__slide h4 {
+  .advantages__slide h3 {
     font-size: 14px;
     line-height: 14px;
   }
@@ -4357,11 +4365,24 @@ button,
     gap: 4px;
   }
 }
-.gallery__swiper-slide .gallery__swiper-picture img {
+
+.gallery__swiper-picture img {
   height: 100%;
 }
-.gallery__swiper-slide .gallery__swiper-picture--singl img {
+.gallery__swiper-picture--singl img {
   height: 449px;
+}
+@media (max-width: 767px) {
+  .gallery__swiper-picture--singl img {
+    height: 259px;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__swiper-picture--couple {
+    width: 172px;
+    height: auto;
+  }
 }
 
 .connection__wrapper {

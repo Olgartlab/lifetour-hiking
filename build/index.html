@@ -2,26 +2,26 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="activity" content="Организация походов в горы" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="activity" content="Организация походов в горы">
   <title>Lifetour</title>
-  <link rel="preload" href="fonts/montserrat-light.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
-  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
-  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
-  <link rel="preload" href="fonts/montserrat-semi-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
-  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
-  <link rel="preload" href="fonts/montserrat-extra-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2" />
+  <link rel="preload" href="fonts/montserrat-light.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-semi-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-extra-bold.woff2" as="font" crossorigin="anonymous" type="font/woff2">
 
-  <link rel="icon" href="favicon/favicon.ico" />
-  <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg" />
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
-  <link rel="manifest" href="favicon/manifest.webmanifest" />
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.webmanifest">
 
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -111,31 +111,17 @@
 
                 <div class="hero__slide-video video" data-video-container>
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="
-                          ./img/hero/video-bg-mobile.webp    1x,
-                          ./img/hero/video-bg-mobile@2x.webp 2x
-                        " />
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="
-                          ./img/hero/video-bg-tablet.webp    1x,
-                          ./img/hero/video-bg-tablet@2x.webp 2x
-                        " />
-                    <source type="image/webp" srcset="
-                          ./img/hero/video-bg-desktop.webp    1x,
-                          ./img/hero/video-bg-desktop@2x.webp 2x
-                        " />
-                    <source media="(max-width: 767px)" srcset="
-                          ./img/hero/video-bg-mobile.jpg    1x,
-                          ./img/hero/video-bg-mobile@2x.jpg 2x
-                        " />
-                    <source media="(max-width: 1199px)" srcset="
-                          ./img/hero/video-bg-tablet.jpg    1x,
-                          ./img/hero/video-bg-tablet@2x.jpg 2x
-                        " />
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/hero/video-bg-tablet.webp 1x, ./img/hero/video-bg-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/hero/video-bg-desktop.webp 1x, ./img/hero/video-bg-desktop@2x.webp 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/hero/video-bg-tablet.jpg 1x, ./img/hero/video-bg-tablet@2x.jpg 2x">
                     <img src="./img/hero/video-bg-desktop.jpg" srcset="./img/hero/video-bg-desktop@2x.jpg 2x"
-                      width="482" height="317" alt="Турист на вершине горы." />
+                      width="482" height="317" alt="Турист на вершине горы.">
                   </picture>
 
-                  <button class="video__button" aria-label="Воспроизведение видео" data-video-button>
+                  <button type="button" class="video__button" aria-label="Воспроизведение видео" data-video-button>
                     <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22"
                       xmlns="http://www.w3.org/2000/svg">
                       <use href="./img/sprite.svg#video-play"></use>
@@ -171,20 +157,10 @@
 
                 <div class="hero__photos-wrapper">
                   <picture>
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="
-                        img/hero/photo-cards-tablet.webp    1x,
-                        img/hero/photo-cards-tablet@2x.webp 2x
-                      " width="442" height="365" />
-                  <source type="image/webp" srcset="
-                        img/hero/photo-cards-desktop.webp    1x,
-                        img/hero/photo-cards-desktop@2x.webp 2x
-                      " width="410" height="459" />
-                  <source media="(max-width: 1199px)" srcset="
-                        img/hero/photo-cards-tablet.png    1x,
-                        img/hero/photo-cards-tablet@2x.png 2x
-                      " width="442" height="365" />
-                  <img src="img/hero/photo-cards-desktop.png" srcset="img/hero/photo-cards-desktop@2x.png" width="410"
-                    height="459" alt="Фотографии из путешествий на Камчатку." />
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/photo-cards-tablet.webp 1x, img/hero/photo-cards-tablet@2x.webp 2x" width="442" height="365">
+                    <source type="image/webp" srcset="img/hero/photo-cards-desktop.webp 1x, img/hero/photo-cards-desktop@2x.webp 2x" width="410" height="459">
+                    <source media="(max-width: 1199px)" srcset="img/hero/photo-cards-tablet.png 1x, img/hero/photo-cards-tablet@2x.png 2x" width="442" height="365">
+                    <img src="img/hero/photo-cards-desktop.png" srcset="img/hero/photo-cards-desktop@2x.png" width="410" height="459" alt="Фотографии из путешествий на Камчатку.">
                   </picture>
                 </div>
               </div>
@@ -226,13 +202,13 @@
           <div class="tours__heading-wrapper">
             <h2 data-header="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__swiper-buttons swiper-buttons">
-              <button class="tours__button-prev swiper-button">
+              <button type="button" class="tours__button-prev swiper-button">
                 <svg class="tours__icon tours__icon--prev" width="14" height="9" viewBox="0 0 14 9"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#left"></use>
                 </svg>
               </button>
-              <button class="tours__button-next swiper-button">
+              <button type="button" class="tours__button-next swiper-button">
                 <svg class="tours__icon tours__icon--prev" width="14" height="9" viewBox="0 0 14 9"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#right"></use>
@@ -512,17 +488,17 @@
             которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев,
             Эльбруса, Алтая, Карелии, Адыгеи и других.
           </p>
-          <div class="training__trainers">
+          <div class="training__trainers trainers">
             <div class="training__heading-wrapper">
               <h3>Наши инструкторы</h3>
               <div class="trainers__swiper-buttons swiper-buttons">
-                <button class="trainers__button-prev swiper-button">
-                  <svg class="trainers_icon trainers__icon--prev" width="14" height="9" viewBox="0 0 14 9"
+                <button type="button" class="trainers__button-prev swiper-button">
+                  <svg class="trainers__icon trainers__icon--prev" width="14" height="9" viewBox="0 0 14 9"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#left"></use>
                   </svg>
                 </button>
-                <button class="trainers__button-next swiper-button">
+                <button type="button" class="trainers__button-next swiper-button">
                   <svg class="trainers__icon trainers__icon--prev" width="14" height="9" viewBox="0 0 14 9"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#right"></use>
@@ -823,49 +799,31 @@
         <div class="reviews__heading-wrapper container">
           <h2 data-header="Отзывы">Отзывы</h2>
           <div class="reviews__buttons swiper-buttons">
-            <button class="reviews__button-prev swiper-button">
-              <svg class="reviews_icon reviews__icon--prev" width="14" height="9" viewBox="0 0 14 9"
-                xmlns="http://www.w3.org/2000/svg">
+            <button type="button" class="reviews__button-prev swiper-button">
+              <svg class="reviews__icon" width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#left"></use>
               </svg>
             </button>
-            <button class="reviews__button-next swiper-button">
-              <svg class="reviews__icon reviews__icon--prev" width="14" height="9" viewBox="0 0 14 9"
-                xmlns="http://www.w3.org/2000/svg">
+            <button type="button" class="reviews__button-next swiper-button">
+              <svg class="reviews__icon" width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#right"></use>
               </svg>
             </button>
           </div>
         </div>
-        <div class="big-wrapper">
+        <div class="reviews__big-wrapper">
           <div class="reviews__swiper swiper">
             <div class="reviews__wrapper swiper-wrapper">
               <!--Slide-1-->
               <div class="swiper-slide reviews__slide ">
                 <div class="reviews__slide-img">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/reviews/review-1-mobile.webp    1x,
-                        img/reviews/review-1-mobile@2x.webp 2x
-                      " />
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="
-                        img/reviews/review-1-tablet.webp    1x,
-                        img/reviews/review-1-tablet@2x.webp 2x
-                      " />
-                    <source type="image/webp" srcset="
-                        img/reviews/review-1-desktop.webp    1x,
-                        img/reviews/review-1-desktop@2x.webp 2x
-                      " />
-                    <source media="(max-width: 767px)" srcset="
-                        img/reviews/review-1-mobile.jpg    1x,
-                        img/reviews/review-1-mobile@2x.jpg 2x
-                      " />
-                    <source media="(max-width: 1199px)" srcset="
-                        img/reviews/review-1-tablet.jpg    1x,
-                        img/reviews/review-1-tablet@2x.jpg 2x
-                      " />
-                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-1-desktop@2x.jpg" width="258"
-                      height="253" alt="фото автора отзыва." />
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/review-1-mobile.webp 1x, img/reviews/review-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/review-1-tablet.webp 1x, img/reviews/review-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/reviews/review-1-desktop.webp 1x, img/reviews/review-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/reviews/review-1-mobile.jpg 1x, img/reviews/review-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)" srcset="img/reviews/review-1-tablet.jpg 1x, img/reviews/review-1-tablet@2x.jpg 2x">
+                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-1-desktop@2x.jpg" width="258" height="253" alt="фото автора отзыва.">
                   </picture>
                 </div>
                 <div class="reviews__slide-text">
@@ -890,28 +848,11 @@
               <div class="reviews__slide swiper-slide">
                 <div class="reviews__slide-img">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/reviews/review-2-mobile.webp    1x,
-                        img/reviews/review-2-mobile@2x.webp 2x
-                      " />
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="
-                        img/reviews/review-1-tablet.webp    1x,
-                        img/reviews/review-2-tablet@2x.webp 2x
-                      " />
-                    <source type="image/webp" srcset="
-                        img/reviews/review-2-desktop.webp    1x,
-                        img/reviews/review-2-desktop@2x.webp 2x
-                      " />
-                    <source media="(max-width: 767px)" srcset="
-                        img/reviews/review-2-mobile.jpg    1x,
-                        img/reviews/review-2-mobile@2x.jpg 2x
-                      " />
-                    <source media="(max-width: 1199px)" srcset="
-                        img/reviews/review-2-tablet.jpg    1x,
-                        img/reviews/review-2-tablet@2x.jpg 2x
-                      " />
-                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-2-desktop@2x.jpg" width="258"
-                      height="253" alt="фото автора отзыва." />
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/review-1-tablet.webp 1x, img/reviews/review-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/reviews/review-2-desktop.webp 1x, img/reviews/review-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/reviews/review-2-mobile.jpg 1x, img/reviews/review-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)" srcset="img/reviews/review-2-tablet.jpg    1x, img/reviews/review-2-tablet@2x.jpg 2x">
+                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-2-desktop@2x.jpg" width="258" height="253" alt="фото автора отзыва.">
                   </picture>
                 </div>
                 <div class="reviews__slide-text">
@@ -934,28 +875,12 @@
               <div class="reviews__slide swiper-slide">
                 <div class="reviews__slide-img">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/reviews/review-3-mobile.webp    1x,
-                        img/reviews/review-3-mobile@2x.webp 2x
-                      " />
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="
-                        img/reviews/review-3-tablet.webp    1x,
-                        img/reviews/review-3-tablet@2x.webp 2x
-                      " />
-                    <source type="image/webp" srcset="
-                        img/reviews/review-3-desktop.webp    1x,
-                        img/reviews/review-3-desktop@2x.webp 2x
-                      " />
-                    <source media="(max-width: 767px)" srcset="
-                        img/reviews/review-3-mobile.jpg    1x,
-                        img/reviews/review-3-mobile@2x.jpg 2x
-                      " />
-                    <source media="(max-width: 1199px)" srcset="
-                        img/reviews/review-3-tablet.jpg    1x,
-                        img/reviews/review-3-tablet@2x.jpg 2x
-                      " />
-                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-3-desktop@2x.jpg" width="258"
-                      height="253" alt="фото автора отзыва." />
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/reviews/review-3-mobile.webp 1x, img/reviews/review-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/reviews/review-3-tablet.webp 1x, img/reviews/review-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/reviews/review-3-desktop.webp 1x, img/reviews/review-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/reviews/review-3-mobile.jpg    1x, img/reviews/review-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)" srcset="img/reviews/review-3-tablet.jpg 1x, img/reviews/review-3-tablet@2x.jpg 2x">
+                    <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-3-desktop@2x.jpg" width="258" height="253" alt="фото автора отзыва.">
                   </picture>
                 </div>
                 <div class="reviews__slide-text">
@@ -983,26 +908,21 @@
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="
                         img/reviews/review-4-mobile.webp    1x,
-                        img/reviews/review-4-mobile@2x.webp 2x
-                      " />
+                        img/reviews/review-4-mobile@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1199px)" srcset="
                         img/reviews/review-4-tablet.webp    1x,
-                        img/reviews/review-4-tablet@2x.webp 2x
-                      " />
+                        img/reviews/review-4-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="
                         img/reviews/review-4-desktop.webp    1x,
-                        img/reviews/review-4-desktop@2x.webp 2x
-                      " />
+                        img/reviews/review-4-desktop@2x.webp 2x">
                     <source media="(max-width: 767px)" srcset="
                         img/reviews/review-4-mobile.jpg    1x,
-                        img/reviews/review-4-mobile@2x.jpg 2x
-                      " />
+                        img/reviews/review-4-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" srcset="
                         img/reviews/review-4-tablet.jpg    1x,
-                        img/reviews/review-4-tablet@2x.jpg 2x
-                      " />
+                        img/reviews/review-4-tablet@2x.jpg 2x">
                     <img src="img/reviews/review-1-desktop.jpg" srcset="img/reviews/review-4-desktop@2x.jpg" width="258"
-                      height="253" alt="фото автора отзыва." />
+                      height="253" alt="фото автора отзыва.">
                   </picture>
                 </div>
                 <div class="reviews__slide-text">
@@ -1039,7 +959,7 @@
                     <use xlink:href="img/sprite.svg#shield"></use>
                   </svg>
                 </div>
-                <h4>Безопасность и охрана</h4>
+                <h3>Безопасность и охрана</h3>
                 <p>
                   Уделяем внимание безопасности клиентов, внедряя строгие
                   процедуры и&nbsp;протоколы безопасности. Имеем планы
@@ -1055,7 +975,7 @@
                     <use xlink:href="img/sprite.svg#crown"></use>
                   </svg>
                 </div>
-                <h4>Экспертиза и знания</h4>
+                <h3>Экспертиза и знания</h3>
                 <p>
                   Наша команда опытных гидов имеет обширные знания
                   о&nbsp;местности, погодных условиях и&nbsp;технике
@@ -1071,7 +991,7 @@
                     <use xlink:href="img/sprite.svg#boot-blue"></use>
                   </svg>
                 </div>
-                <h4>Оборудование и снаряжение</h4>
+                <h3>Оборудование и снаряжение</h3>
                 <p>
                   Мы&nbsp;предоставляем клиентам все необходимое оборудование,
                   необходимое для путешествия. Это избавляет клиентов
@@ -1087,7 +1007,7 @@
                     <use xlink:href="img/sprite.svg#path"></use>
                   </svg>
                 </div>
-                <h4>Индивидуальные маршруты</h4>
+                <h3>Индивидуальные маршруты</h3>
                 <p>
                   Предлагает широкий выбор туров, отвечающих различным уровням
                   мастерства и&nbsp;интересам. Мы&nbsp;также можем
@@ -1102,7 +1022,7 @@
                     <use xlink:href="img/sprite.svg#leaf"></use>
                   </svg>
                 </div>
-                <h4>Бережное отношение к&nbsp;природе</h4>
+                <h3>Бережное отношение к&nbsp;природе</h3>
                 <p>
                   Уделяем первостепенное внимание охране окружающей среды
                   и&nbsp;гарантируем, что туры оказывают минимальное
@@ -1160,39 +1080,22 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class=" gallery__swiper-picture gallery__swiper-picture--singl">
                   <picture>
-                    <source type="image/webp" srcset="
-                        img/gallery/photo-1.webp    1x,
-                        img/gallery/photo-1@2x.webp 2x
-                      " />
-                    <img class="gallery__swiper-img" src="img/gallery/photo-1.jpg"
-                      srcset="img/gallery/photo-1@2x.jpg 2x" width="275" height="449"
-                      alt="Фото путешественника в горах." />
+                    <source type="image/webp" srcset="img/gallery/photo-1.webp 1x, img/gallery/photo-1@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-1.jpg" srcset="img/gallery/photo-1@2x.jpg 2x" width="275" height="449" alt="Фото путешественника в горах.">
                   </picture>
                 </div>
               </div>
-              <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--couple">
                 <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-2.webp    1x,
-                          img/gallery/photo-2@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-2.jpg"
-                      srcset="img/gallery/photo-2@2x.jpg 2x" width="298" height="179"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-2.webp 1x, img/gallery/photo-2@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-2.jpg" srcset="img/gallery/photo-2@2x.jpg 2x" width="298" height="179" alt="Фотография нашего похода.">
                   </picture>
                 </div>
-                <div class="gallery__swiper-picture">
+                <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-3.webp    1x,
-                          img/gallery/photo-3@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-3.jpg"
-                      srcset="img/gallery/photo-3@2x.jpg 2x" width="298" height="265"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-3.webp 1x, img/gallery/photo-3@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-3.jpg" srcset="img/gallery/photo-3@2x.jpg 2x" width="298" height="265" alt="Фотография нашего похода.">
                   </picture>
                 </div>
               </div>
@@ -1200,39 +1103,22 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class="gallery__swiper-picture gallery__swiper-picture--singl">
                   <picture>
-                    <source type="image/webp" srcset="
-                        img/gallery/photo-4.webp    1x,
-                        img/gallery/photo-4@2x.webp 2x
-                      " />
-                    <img class="gallery__swiper-img" src="img/gallery/photo-4.jpg"
-                      srcset="img/gallery/photo-4@2x.jpg 2x" width="275" height="449"
-                      alt="Фото путешественника в горах." />
+                    <source type="image/webp" srcset="img/gallery/photo-4.webp 1x, img/gallery/photo-4@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg 2x" width="275" height="449" alt="Фото путешественника в горах.">
                   </picture>
                 </div>
               </div>
-              <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--couple">
                 <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-5.webp    1x,
-                          img/gallery/photo-5@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-5.jpg"
-                      srcset="img/gallery/photo-5@2x.jpg 2x" width="298" height="179"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-5.webp 1x, img/gallery/photo-5@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg 2x" width="298" height="179" alt="Фотография нашего похода.">
                   </picture>
                 </div>
-                <div class="gallery__swiper-picture">
+                <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-6.webp    1x,
-                          img/gallery/photo-6@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-6.jpg"
-                      srcset="img/gallery/photo-6@2x.jpg 2x" width="298" height="265"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-6.webp 1x, img/gallery/photo-6@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg 2x" width="298" height="265" alt="Фотография нашего похода.">
                   </picture>
                 </div>
               </div>
@@ -1240,42 +1126,24 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class="gallery__swiper-picture gallery__swiper-picture--singl">
                   <picture>
-                    <source type="image/webp" srcset="
-                        img/gallery/photo-7.webp    1x,
-                        img/gallery/photo-7@2x.webp 2x
-                      " />
-                    <img class="gallery__swiper-img" src="img/gallery/photo-7.jpg"
-                      srcset="img/gallery/photo-7@2x.jpg 2x" width="275" height="449"
-                      alt="Фото путешественника в горах." />
+                    <source type="image/webp" srcset="img/gallery/photo-7.webp 1x, img/gallery/photo-7@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg 2x" width="275" height="449" alt="Фото путешественника в горах.">
                   </picture>
                 </div>
               </div>
-              <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--couple">
                 <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-2.webp    1x,
-                          img/gallery/photo-2@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-2.jpg"
-                      srcset="img/gallery/photo-2@2x.jpg 2x" width="298" height="179"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-2.webp 1x,img/gallery/photo-2@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-2.jpg" srcset="img/gallery/photo-2@2x.jpg 2x" width="298" height="179" alt="Фотография нашего похода.">
                   </picture>
                 </div>
-                <div class="gallery__swiper-picture">
+                <div class="gallery__swiper-picture gallery__swiper-picture--couple">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/gallery/photo-3.webp    1x,
-                          img/gallery/photo-3@2x.webp 2x
-                        " />
-
-                    <img class="gallery__swiper-img" src="img/gallery/photo-3.jpg"
-                      srcset="img/gallery/photo-3@2x.jpg 2x" width="298" height="265"
-                      alt="Фотография с нашего похода." />
+                    <source type="image/webp" srcset="img/gallery/photo-3.webp 1x, img/gallery/photo-3@2x.webp 2x">
+                    <img class="gallery__swiper-img" src="img/gallery/photo-3.jpg" srcset="img/gallery/photo-3@2x.jpg 2x" width="298" height="265" alt="Фотография нашего похода.">
                   </picture>
                 </div>
-
               </div>
 
             </div>
@@ -1296,7 +1164,7 @@
                 <div class="custom-input connection__input" data-validate-type="text" data-limitation="name"
                   data-required="data-required">
                   <input type="text" name="user-name" placeholder="Как к вам обращаться?"
-                    aria-label="Введите ваше имя."/>
+                    aria-label="Введите ваше имя.">
                 </div>
 
                 <div class="custom-input connection__input" data-validate-type="phone"
@@ -1304,7 +1172,7 @@
                   <input type="tel" name="user-phone" placeholder="Телефон"
                     aria-label="Введите ваш контактный телефон.">
                 </div>
-                <button class="connection__button btn" type="submit">
+                <button type="button" class="connection__button btn" type="submit">
                   Отправить
                 </button>
               </div>
@@ -1366,28 +1234,12 @@
           <div class="contacts__map-wrapper">
             <div class="contacts__map" id="map">
               <picture>
-                <source type="image/webp" media="(max-width: 1199px)" srcset="
-                    img/map/map-tablet.webp    1x,
-                    img/map/map-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(max-width: 767px)" srcset="
-                    img/map/map-mobile.webp    1x,
-                    img/map/map-mobile@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="
-                    img/map/map-desktop.webp    1x,
-                    img/map/map-desktop@2x.webp 2x
-                  " />
-                <source media="(max-width: 1199px)" srcset="
-                    img/map/map-tablet.jpg    1x,
-                    img/map/map-tablet@2x.jpg 2x
-                  " width="678" height="340" />
-                <source media="(max-width: 767px)" srcset="
-                    img/map/map-mobile.jpg    1x,
-                    img/map/map-mobile@2x.jpg 2x
-                  " width="290" height="320" />
-                <img src="img/map/map-desktop.jpg" srcset="img/map/map-desktop@2x.jpg" width="585" height="324"
-                  alt="наш офис на карте." />
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x" width="678" height="340">
+                <source media="(max-width: 767px)" srcset="img/map/map-mobile.jpg 1x, img/map/map-mobile@2x.jpg 2x" width="290" height="320">
+                <img src="img/map/map-desktop.jpg" srcset="img/map/map-desktop@2x.jpg" width="585" height="324" alt="наш офис на карте.">
               </picture>
             </div>
           </div>

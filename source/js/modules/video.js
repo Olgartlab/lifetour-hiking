@@ -1,4 +1,6 @@
 const container = document.querySelector('.hero__slide-video');
+const cover = container.querySelector('img');
+const button = container.querySelector('button');
 
 const createVideo = () => {
   const video = document.createElement('iframe');
@@ -10,11 +12,13 @@ const createVideo = () => {
   container.append(video);
 };
 
+const renderVideoCover = () => {
+  cover.style.display = 'block';
+  button.style.display = 'block';
+};
+
 const initVideoPlayer = () => {
   if (container !== null) {
-
-    const cover = container.querySelector('img');
-    const button = container.querySelector('button');
 
     if (container && cover && button) {
       button.addEventListener('click', (event) => {
@@ -27,4 +31,4 @@ const initVideoPlayer = () => {
   }
 };
 
-export {initVideoPlayer};
+export {initVideoPlayer, renderVideoCover};

@@ -1,5 +1,6 @@
 .advantages {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -107,7 +108,6 @@
 }
 
 .advantages__swiper-wrapper {
-
   @include vp-1199 {
     width: 100%;
     display: flex;
@@ -161,7 +161,7 @@
     max-width: 100%;
   }
 
-  h4 {
+  h3 {
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
