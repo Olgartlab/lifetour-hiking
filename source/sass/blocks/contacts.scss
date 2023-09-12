@@ -101,6 +101,7 @@
 
 .contacts__list-item {
   display: flex;
+  align-items: center ;
 
   &:not(:last-child) {
     margin-bottom: 35px;
@@ -116,6 +117,8 @@
 
   svg {
     margin-right: 30px;
+    width: 26px;
+    height: 26px;
 
     @include vp-1199 {
       margin-right: 10px;

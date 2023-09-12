@@ -40,13 +40,13 @@
     font-weight: 800;
     line-height: 35px;
     margin: 0;
-    margin-bottom: 51px;
+    margin-bottom: 48px;
     padding-top: 19px;
 
     @include vp-1199 {
       font-size: 25px;
       line-height: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 46px;
       padding-top: 15px;
     }
 
@@ -91,7 +91,7 @@
     width: 100%;
     max-width: 1199px;
     margin: 0 auto;
-    padding: 70px 45px;
+    padding: 43px 45px 70px 45px;
   }
 
   @include vp-767 {
@@ -108,11 +108,15 @@
 }
 
 .advantages__swiper-wrapper {
+  margin-left: 440px;
+
   @include vp-1199 {
+    margin: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -149,9 +153,9 @@
   max-width: 380px;
 
   @include vp-1199 {
-    max-width: 45.76%;
+    max-width: 47.76%;
     padding: 30px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     height: auto;
   }
 
@@ -184,11 +188,11 @@
     font-weight: 400;
     line-height: 22px;
     margin: 0;
-  }
 
-  @include vp-1199 {
-    font-size: 12px;
-    line-height: 18px;
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 

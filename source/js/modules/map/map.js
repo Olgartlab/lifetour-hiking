@@ -1,5 +1,5 @@
 import L from '../../vendor/leaflet/leaflet-src';
-const container = document.querySelector('.hero__slide-video');
+const container = document.querySelector('.contacts__map-wrapper');
 
 const initMap = () => {
   if (container !== null) {

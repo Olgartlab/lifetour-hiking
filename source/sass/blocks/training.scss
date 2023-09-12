@@ -7,7 +7,8 @@
 
   h2 {
     position: relative;
-    margin: 0 0 27px;
+    margin: 0 0 32px;
+    z-index: 1;
     padding-top: 19px;
     font-size: 35px;
     font-weight: 800;
@@ -16,7 +17,7 @@
     @include vp-1199 {
       font-size: 25px;
       line-height: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 21px;
       padding-top: 15px;
     }
 
@@ -55,7 +56,15 @@
     font-weight: 400;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
+    z-index: 1;
+    position: relative;
+
+    @include vp-1199 {
+      max-width: 86%;
+      margin-bottom: 57px;
+    }
+
 
     @include vp-767 {
       font-size: 14px;
@@ -68,7 +77,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 35px;
+  padding-bottom: 5px;
+
+  @include vp-1199 {
+    padding-bottom: 0px;
+  }
 }
 
 .training__trainers {
@@ -92,7 +105,7 @@
 
 .training__activity-list {
   margin: 0;
-  margin-top: 45px;
+  margin-top: 42px;
   margin-bottom: 32px;
   padding: 0;
   display: grid;
@@ -101,7 +114,7 @@
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 141px;
+    column-gap: 32px;
     row-gap: 91px;
     grid-auto-flow: column;
   }
@@ -196,7 +209,7 @@
       position: absolute;
       bottom: -15px;
       left: 0;
-      width: calc(100% + 141px);
+      width: calc(100% + 32px);
       height: 1px;
     }
 
@@ -216,9 +229,9 @@
       content: "";
       background-color: $color-navy-blue;
       position: absolute;
-      top: -15px;
+      top: -19px;
       left: 0;
-      width: calc(100% + 141px);
+      width: calc(100% + 32px);
       height: 1px;
     }
 
@@ -256,7 +269,7 @@
 .training__activity-item:nth-child(4n + 3)::after,
 .training__activity-item:nth-child(4n + 4)::after {
   @include vp-1199 {
-    top: -22px;
+    top: -26px;
     bottom: auto;
   }
 

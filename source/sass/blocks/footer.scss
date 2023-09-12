@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
 
   @include vp-1199 {
     font-size: 14px;
@@ -96,7 +96,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 725px;
-  column-gap: 23px;
+  column-gap: 32px;
 
   @include vp-1199 {
     margin-right: 5px;
