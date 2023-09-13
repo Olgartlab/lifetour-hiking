@@ -183,6 +183,8 @@
 
   @include vp-767 {
     margin-bottom: 0;
+    width: 180px;
+    padding: 18px;
   }
 }
 
@@ -242,7 +244,7 @@
 
 .hero__swiper .hero__swiper-pagination {
   position: relative;
-  bottom: 97px;
+  bottom: 107px;
   width: 100%;
   height: 0;
   display: flex;
@@ -256,7 +258,8 @@
   }
 
   @include vp-767 {
-    bottom: 40px;
+    bottom: 50px;
+    column-gap: 12px;
   }
 }
 

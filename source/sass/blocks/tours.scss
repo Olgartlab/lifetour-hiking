@@ -38,7 +38,6 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 30px;
       padding-top: 7px;
     }
 
@@ -71,6 +70,10 @@
 
   @include vp-1199 {
     padding-top: 73px;
+  }
+
+  @include vp-767 {
+    padding-top: 60px;
   }
 
   &::after {
@@ -114,6 +117,10 @@
   @include vp-1199 {
     padding-bottom: 43px;
   }
+
+  @include vp-767 {
+    padding-bottom: 27px;
+  }
 }
 
 .tours__swiper-buttons {
@@ -131,6 +138,12 @@
   @include vp-1199 {
     padding-left: 6px;
     padding-right: 6px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -265,6 +278,10 @@
   z-index: 0;
   position: relative;
 
+  @include vp-767 {
+    padding-top: 197px;
+  }
+
   h3 {
     margin: 0;
     margin-bottom: 17px;
@@ -274,6 +291,12 @@
     font-weight: 700;
     line-height: 28px;
     max-width: 240px;
+
+    @include vp-767 {
+      line-height: 24px;
+      font-size: 20px;
+      padding-right: 15px;
+    }
   }
 }
 
@@ -292,6 +315,13 @@
   @include vp-1199 {
     gap: 17px;
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 22px;
+    margin-bottom: 15px;
+  }
 }
 
 .tours__location-item {
@@ -302,10 +332,12 @@
 
   @include vp-1199 {
     min-width: 92px;
-
     padding: 9px 23px 8px 15px;
-
     max-width: 97px;
+  }
+
+  @include vp-767 {
+    order: 3;
   }
 
   svg {
@@ -319,6 +351,10 @@
 
   svg {
     margin-right: 8px;
+
+    @include vp-767 {
+      margin-right: 13px;
+    }
   }
 }
 
@@ -334,6 +370,10 @@
     column-gap: 27px;
   }
 
+  @include vp-767 {
+    column-gap: 15px;
+  }
+
   &::before {
     content: "";
     height: 1px;
@@ -345,6 +385,10 @@
     position: absolute;
     top: -21px;
     left: 0;
+
+    @include vp-767 {
+      top: -13px;
+    }
   }
 }
 
@@ -364,9 +408,13 @@
 
   span {
     font-size: 13px;
-
     font-weight: 700;
     line-height: 13px;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 }
 
@@ -374,6 +422,10 @@
   width: 79px;
   display: flex;
   column-gap: 1px;
+
+  @include vp-767 {
+    width: 73px;
+  }
 }
 
 .tours__show-all-button {
@@ -425,6 +477,7 @@
       font-size: 14px;
       line-height: 14px;
       letter-spacing: 0.56px;
+      margin-bottom: 60px;
     }
   }
 }

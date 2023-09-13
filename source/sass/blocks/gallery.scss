@@ -10,8 +10,8 @@
     @include vp-1199 {
       font-size: 25px;
       line-height: 25px;
-      margin-bottom: 50px;
-      padding-top: 15 px;
+      margin-bottom: 23px;
+      padding-top: 15px;
     }
 
     @include vp-767 {
@@ -50,6 +50,11 @@
     line-height: 24px;
     margin: 0;
     width: 63%;
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -58,6 +63,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 47px;
+
+  @include vp-1199 {
+    margin-bottom: 37px;
+  }
 }
 
 .gallery__swiper-slide {
