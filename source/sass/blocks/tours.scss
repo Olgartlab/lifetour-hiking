@@ -93,7 +93,6 @@
     }
   }
 
-
   &::before {
     position: absolute;
     content: "";
@@ -305,8 +304,8 @@
   margin: 0;
   padding: 0;
   margin-bottom: 23px;
-  display: grid;
-  grid-template-columns: max-content auto auto;
+  display: flex;
+  //flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
@@ -314,23 +313,26 @@
   line-height: 12px;
 
   @include vp-1199 {
-    gap: 17px;
+    gap: 14px;
+    justify-content: stretch;
   }
 
   @include vp-767 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px 22px;
-  margin-bottom: 15px;
-  max-width: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    justify-content: stretch;
   }
 }
 
 .tours__location-item {
   min-width: 108px;
   background-color: #0266c1;
-  padding: 9px 23px 8px 23px;
+  padding: 9px 5px 8px 5px;
   display: flex;
+  justify-content: center;
 
   @include vp-1199 {
     min-width: 92px;
@@ -350,10 +352,21 @@
 .tours__duration-item {
   display: flex;
   align-items: center;
-  min-width: 74px;
+  width: 82px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include vp-1199 {
+    justify-content: flex-start;
+  }
+
+  @include vp-767 {
+    justify-content: stretch;
+  }
 
   svg {
     margin-right: 8px;
+    flex-shrink: 0;
 
     @include vp-767 {
       margin-right: 13px;
@@ -370,11 +383,11 @@
   justify-content: space-between;
 
   @include vp-1199 {
-    column-gap: 27px;
+    column-gap: 19px;
   }
 
   @include vp-767 {
-    column-gap: 15px;
+    column-gap: 0;
   }
 
   &::before {
@@ -399,6 +412,26 @@
   display: flex;
   flex-direction: column;
   min-width: 88px;
+
+  &--date {
+    padding-left: 10px;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+  }
+
+  &--group {
+    padding-left: 15px;
+
+    @include vp-1199 {
+      padding-left: 2px;
+    }
+
+    @include vp-767 {
+      padding-left: 9px;
+    }
+  }
 
   p {
     font-size: 12px;
