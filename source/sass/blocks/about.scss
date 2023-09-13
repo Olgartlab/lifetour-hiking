@@ -35,6 +35,7 @@
 
   @include vp-767 {
     margin-top: 39px;
+    padding-bottom: 18px;
   }
 }
 
@@ -69,7 +70,6 @@
 
   @include vp-767 {
     max-width: calc(100vw - 30px);
-    padding-right: 15px;
     margin: 0 auto;
   }
 
@@ -92,7 +92,7 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
       padding-top: 7px;
     }
 

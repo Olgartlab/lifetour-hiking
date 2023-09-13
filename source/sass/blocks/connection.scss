@@ -80,7 +80,7 @@
     @include vp-767 {
       font-size: 12px;
       line-height: 18px;
-      margin-bottom: 26 px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -104,6 +104,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .connection__input {
@@ -126,5 +130,7 @@ form .connection__button {
 
   @include vp-767 {
     margin-top: 1px;
+    padding-bottom: 18px;
+    padding-top: 18px;
   }
 }

@@ -44,8 +44,7 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 30px;
-      padding-top: 7px;
+      padding-top: 11px;
     }
 
     &::after {
@@ -115,7 +114,7 @@
 
 .reviews__slide-img {
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 }
 
@@ -160,6 +159,7 @@
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 6px;
+      padding-top: 3px;
     }
   }
 
