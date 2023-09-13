@@ -317,6 +317,11 @@
     justify-content: stretch;
   }
 
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+
   @include vp-767 {
     display: flex;
     flex-wrap: wrap;

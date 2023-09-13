@@ -3277,6 +3277,12 @@ button,
             justify-content: stretch;
   }
 }
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .tours__data-list {
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+}
 @media (max-width: 767px) {
   .tours__data-list {
     display: -webkit-box;
