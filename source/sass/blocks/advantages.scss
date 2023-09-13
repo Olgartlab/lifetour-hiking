@@ -1,38 +1,6 @@
 .advantages {
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 45px;
-    right: 0;
-    width: 41.6%;
-    height: 51%;
-    background-image: url("../img/clouds/cloud-2.png");
-    background-repeat: no-repeat;
-    z-index: 0;
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -120px;
-    left: 0;
-    width: 41.6%;
-    height: 51%;
-    background-image: url("../img/clouds/cloud-3.png");
-    background-repeat: no-repeat;
-    z-index: 0;
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
-
   h2 {
     position: relative;
     text-align: center;
@@ -86,6 +54,7 @@
   padding-bottom: 107px;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
 
   @include vp-1199 {
     width: 100%;
@@ -97,6 +66,38 @@
   @include vp-767 {
     padding: 30px 15px;
     max-width: 767px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 41.6%;
+    height: 51%;
+    background-image: url("../img/clouds/cloud-2.png");
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 41.6%;
+    height: 51%;
+    background-image: url("../img/clouds/cloud-3.png");
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @include vp-1199 {
+      display: none;
+    }
   }
 }
 

@@ -1,20 +1,6 @@
 .tours {
   position: relative;
 
-  &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -84px;
-    width: 418px;
-    height: 279px;
-    background-image: url("../img/clouds/cloud-1.png");
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
-
   h2 {
     width: 55%;
     margin: 0;
@@ -104,6 +90,21 @@
       background-size: 54.2% auto;
 
       transform: translateY(-69px);
+    }
+  }
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -84px;
+    width: 418px;
+    height: 279px;
+    background-image: url("../img/clouds/cloud-1.png");
+
+    @include vp-1199 {
+      display: none;
     }
   }
 }
