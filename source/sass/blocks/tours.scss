@@ -69,8 +69,10 @@
     right: 0;
     width: 100%;
     height: 150%;
-
-    background-image: url("../img/clouds/big-clouds-desktop.png");
+    background-image: image-set(url("../img/clouds/big-clouds-desktop.webp") type("image/webp"), url("../img/tours/big-clouds-desktop.jpg") type("image/jpg"));
+    @include retina {
+      background-image: image-set(url("../img/clouds/big-clouds-desktop@2x.webp") type("image/webp"), url("../img/tours/big-clouds-desktop@2x.jpg") type("image/jpg"));
+    }
     background-position: right;
     background-repeat: no-repeat;
     background-size: 41.8% auto;
@@ -78,15 +80,20 @@
     content: "";
 
     @include vp-1199 {
-      background-image: url("../img/clouds/big-clouds-tablet.png");
+      background-image: image-set(url("../img/clouds/big-clouds-tablet.webp") type("image/webp"), url("../img/tours/big-clouds-tablet.jpg") type("image/jpg"));
+      @include retina {
+        background-image: image-set(url("../img/clouds/big-clouds-tablet@2x.webp") type("image/webp"), url("../img/tours/big-clouds-tablet@2x.jpg") type("image/jpg"));
+      }
       background-size: 38% auto;
       transform: translateY(414px);
     }
 
     @include vp-767 {
       top: 2.6%;
-
-      background-image: url("../img/clouds/big-clouds-mobile.png");
+      background-image: image-set(url("../img/clouds/big-clouds-mobile.webp") type("image/webp"), url("../img/tours/big-clouds-mobile.jpg") type("image/jpg"));
+      @include retina {
+        background-image: image-set(url("../img/clouds/big-clouds-mobile@2x.webp") type("image/webp"), url("../img/tours/big-clouds-mobile@2x.jpg") type("image/jpg"));
+      }
       background-size: 54.2% auto;
 
       transform: translateY(-69px);
@@ -173,97 +180,101 @@
   }
 
   &--first {
-    background-image: url("../img/tours/tour-1-desktop.jpg");
+    background-image: -webkit-image-set(url("../img/tours/tour-1-desktop@2x.webp") 2x, url("../img/tours/tour-1-desktop.webp") 1x);
+    background-image: image-set(url("../img/tours/tour-1-desktop.webp") type("image/webp"), url("../img/tours/tour-1-desktop.jpg") type("image/jpg"));
 
     @include retina {
-      background-image: url("../img/tours/tour-1-desktop@2x.jpg");
+      background-image: image-set(url("../img/tours/tour-1-desktop@2x.webp") type("image/webp"), url("../img/tours/tour-1-desktop@2x.jpg") type("image/jpg"));
     }
 
     @include vp-1199 {
-      background-image: url("../img/tours/tour-1-tablet.jpg");
+      background-image: image-set(url("../img/tours/tour-1-tablet.webp") type("image/webp"), url("../img/tours/tour-1-tablet.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-1-tablet@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-1-tablet@2x.webp") type("image/webp"), url("../img/tours/tour-1-tablet@2x.jpg") type("image/jpg"));
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/tours/tour-1-mobile.jpg");
+      background-image: image-set(url("../img/tours/tour-1-mobile.webp") type("image/webp"), url("../img/tours/tour-1-mobile.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-1-mobile@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tours/tour-1-mobile@2x.jpg") type("image/jpg"));
       }
     }
   }
 
   &--second {
-    background-image: url("../img/tours/tour-2-desktop.jpg");
+    background-image: -webkit-image-set(url("../img/tours/tour-2-desktop@2x.webp") 2x, url("../img/tours/tour-2-desktop.webp") 1x);
+    background-image: image-set(url("../img/tours/tour-2-desktop.webp") type("image/webp"), url("../img/tours/tour-2-desktop.jpg") type("image/jpg"));
 
     @include retina {
-      background-image: url("../img/tours/tour-2-desktop@2x.jpg");
+      background-image: image-set(url("../img/tours/tour-2-desktop@2x.webp") type("image/webp"), url("../img/tours/tour-2-desktop@2x.jpg") type("image/jpg"));
     }
 
     @include vp-1199 {
-      background-image: url("../img/tours/tour-2-tablet.jpg");
+      background-image: image-set(url("../img/tours/tour-2-tablet.webp") type("image/webp"), url("../img/tours/tour-2-tablet.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-2-tablet@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tours/tour-2-tablet@2x.jpg") type("image/jpg"));
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/tours/tour-2-mobile.jpg");
+      background-image: image-set(url("../img/tours/tour-2-mobile.webp") type("image/webp"), url("../img/tours/tour-2-mobile.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-2-mobile@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tours/tour-2-mobile@2x.jpg") type("image/jpg"));
       }
     }
   }
 
   &--third {
-    background-image: url("../img/tours/tour-3-desktop.jpg");
+    background-image: -webkit-image-set(url("../img/tours/tour-3-desktop@2x.webp") 2x, url("../img/tours/tour-3-desktop.webp") 1x);
+    background-image: image-set(url("../img/tours/tour-3-desktop.webp") type("image/webp"), url("../img/tours/tour-3-desktop.jpg") type("image/jpg"));
 
     @include retina {
-      background-image: url("../img/tours/tour-3-desktop@2x.jpg");
+      background-image: image-set(url("../img/tours/tour-3-desktop@2x.webp") type("image/webp"), url("../img/tours/tour-3-desktop@2x.jpg") type("image/jpg"));
     }
 
     @include vp-1199 {
-      background-image: url("../img/tours/tour-3-tablet.jpg");
+      background-image: image-set(url("../img/tours/tour-3-tablet.webp") type("image/webp"), url("../img/tours/tour-3-tablet.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-3-tablet@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-3-tablet@2x.webp") type("image/webp"), url("../img/tours/tour-3-tablet@2x.jpg") type("image/jpg"));
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/tours/tour-3-mobile.jpg");
+      background-image: image-set(url("../img/tours/tour-3-mobile.webp") type("image/webp"), url("../img/tours/tour-3-mobile.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-3-mobile@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-3-mobile@2x.webp") type("image/webp"), url("../img/tours/tour-3-mobile@2x.jpg") type("image/jpg"));
       }
     }
   }
 
   &--fourth {
-    background-image: url("../img/tours/tour-2-desktop.jpg");
+    background-image: -webkit-image-set(url("../img/tours/tour-2-desktop@2x.webp") 2x, url("../img/tours/tour-2-desktop.webp") 1x);
+    background-image: image-set(url("../img/tours/tour-2-desktop.webp") type("image/webp"), url("../img/tours/tour-2-desktop.jpg") type("image/jpg"));
 
     @include retina {
-      background-image: url("../img/tours/tour-2-desktop@2x.jpg");
+      background-image: image-set(url("../img/tours/tour-2-desktop@2x.webp") type("image/webp"), url("../img/tours/tour-2-desktop@2x.jpg") type("image/jpg"));
     }
 
     @include vp-1199 {
-      background-image: url("../img/tours/tour-2-tablet.jpg");
+      background-image: image-set(url("../img/tours/tour-2-tablet.webp") type("image/webp"), url("../img/tours/tour-2-tablet.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-2-tablet@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tours/tour-2-tablet@2x.jpg") type("image/jpg"));
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/tours/tour-2-mobile.jpg");
+      background-image: image-set(url("../img/tours/tour-2-mobile.webp") type("image/webp"), url("../img/tours/tour-2-mobile.jpg") type("image/jpg"));
 
       @include retina {
-        background-image: url("../img/tours/tour-2-mobile@2x.jpg");
+        background-image: image-set(url("../img/tours/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tours/tour-2-mobile@2x.jpg") type("image/jpg"));
       }
     }
   }

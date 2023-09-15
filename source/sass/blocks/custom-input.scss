@@ -1,7 +1,6 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
   width: 340px;
   padding: 0;
@@ -27,7 +26,6 @@
     border: 1px solid rgba(2, 102, 193, 0.1);
     background: $color-default-white;
     outline: none;
-
     transition: border 0.3s ease;
 
     @include vp-1199 {
@@ -47,85 +45,39 @@
         line-height: 14px;
         font-size: 14px;
       }
+    }
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
+    &:focus::-webkit-input-placeholder,
+    &:active::-webkit-input-placeholder {
+      color: transparent;
+    }
 
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+    &:hover {
+      border:solid 1px $color-navy-blue;
+
+      &::placeholder {
+        color: $color-navy-blue;
+        opacity: 1;
+        transition: color $trans-default;
       }
     }
-  }
 
-  &__error {
-    position: absolute;
-    right: 0;
-    bottom: 35px;
-
-    color: #ff1553;
-
-    opacity: 0;
-
-    transition: opacity 0.3s ease;
-
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
+    &:focus,
+    &:active {
+      border: solid 1px $color-resolution-blue;
     }
-  }
 
-  &.is-invalid {
-    input,
-    textarea {
-      padding: 21px 29px;
-      border: 1px solid rgba(255, 18, 31, 1);
+    &:disabled {
+      pointer-events: none;
 
-      @include vp-1199 {
-        padding: 21px 29px;
-      }
-
-      &:focus,
-      &:hover {
-        padding: 21px 29px;
-        border: 1px solid rgba(255, 18, 31, 1);
-
-        @include vp-1199 {
-          padding: 21px 29px;
-        }
+      &::placeholder {
+        color: $color-primary;
+        opacity: 0.1;
       }
     }
   }
+}
 
-  &.is-valid {
-    input {
-      padding: 22px 30px;
-
-      @include vp-1199 {
-        padding: 22px 30px;
-      }
-
-      &:focus,
-      &:hover {
-        padding: 21px 29px;
-
-        @include vp-1199 {
-          padding: 21px 29px;
-        }
-      }
-    }
-  }
-
-  .input-message {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
-    }
-  }
+.custom-input.is-invalid input {
+  border: solid 1px  #ff121f;
 }

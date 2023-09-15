@@ -1,5 +1,5 @@
 .training {
-  border-bottom: 1px solid rgba($color-navy-blue, 0.2);
+  border-bottom: 1px solid rgba($color-navy-blue, 0.1);
 
   @include vp-1199 {
     border-color: transparent;
@@ -143,6 +143,7 @@
       content: "";
       background-color: $color-navy-blue;
       position: absolute;
+      opacity: 0.1;
       top: 25px;
       left: 10px;
       width: 1px;
@@ -201,6 +202,7 @@
     @include vp-1199 {
       content: "";
       background-color: $color-navy-blue;
+      opacity: 0.1;
       position: absolute;
       bottom: 55px;
       left: 7px;
@@ -220,6 +222,7 @@
     @include vp-1199 {
       content: "";
       background-color: $color-navy-blue;
+      opacity: 0.1;
       position: absolute;
       bottom: -15px;
       left: 0;
@@ -242,6 +245,7 @@
     @include vp-1199 {
       content: "";
       background-color: $color-navy-blue;
+      opacity: 0.1;
       position: absolute;
       top: -19px;
       left: 0;
@@ -267,6 +271,7 @@
   height: 14px;
   background-color: #0266c1;
   border-radius: 50%;
+  z-index: 1;
 
   @include vp-1199 {
     top: auto;

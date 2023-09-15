@@ -42,7 +42,7 @@
     height: 26px;
     margin: 0;
     padding: 0;
-    padding-right: 123px;
+    margin-right: 100px;
     background-color: $color-transparent;
     color: $color-default-white;
     border: none;
@@ -111,7 +111,7 @@
 
   @include vp-767 {
     margin-left: auto;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     grid-column: 2/3;
   }
 }
@@ -180,12 +180,17 @@
     line-height: 16px;
     letter-spacing: 0.64px;
     text-transform: uppercase;
+    overflow-y: scroll;
+    max-height: 226px;
+    width: 100%;
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
+    max-height: 194px;
+    gap: 22px;
   }
 }
 

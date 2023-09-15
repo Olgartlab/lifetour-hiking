@@ -48,6 +48,12 @@ const initSwipers = () => {
         clickable: true,
       },
 
+      breakpoints: {
+        1200: {
+          allowTouchMove: false,
+        },
+      },
+
       on: {
         slideChange() {
           if (document.querySelector('.hero__slide-video iframe')) {

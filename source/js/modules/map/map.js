@@ -3,6 +3,7 @@ const container = document.querySelector('.contacts__map-wrapper');
 
 const initMap = () => {
   if (container !== null) {
+    container.querySelector('picture').remove();
     const map = L.map('map', { scrollWheelZoom: false }).setView([55.774876, 37.632641], 16);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

@@ -4,7 +4,7 @@
   position: absolute;
   top: 301px;
   right: 120px;
-  z-index: -1;
+  z-index: 0;
 
   @include vp-1199 {
     position: relative;
@@ -34,6 +34,24 @@
   border-radius: 50%;
   cursor: pointer;
   user-select: none;
+
+  &:hover {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-transparent;
+
+    svg {
+      stroke: $color-default-black;
+    }
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
+
+    svg {
+      stroke: none;
+    }
+  }
 
   svg {
     margin: auto;

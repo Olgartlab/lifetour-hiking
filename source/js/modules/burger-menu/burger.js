@@ -5,6 +5,7 @@ export class Burger {
   constructor() {
     this._header = document.querySelector('[data-header]');
     this._burger = document.querySelector('[data-burger]');
+    this._overlay = document.querySelector('[data-overlay]');
     this._scrollLock = new ScrollLock();
     this._focusLock = new FocusLock();
     this._isMenuOpen = false;
@@ -20,11 +21,15 @@ export class Burger {
     }
 
     this._burger.addEventListener('click', this._onBurgerClick);
+    this._overlay.addEventListener('click', () => {
+      this._closeMenu();
+    });
   }
 
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
+    this._overlay.style.visibility = 'visible';
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
     document.addEventListener('click', this._onDocumentClick);
@@ -37,6 +42,7 @@ export class Burger {
   _closeMenu() {
     this._isMenuOpen = false;
     this._header.classList.remove('is-open');
+    this._overlay.style.visibility = 'hidden';
     this._scrollLock.enableScrolling();
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
@@ -66,28 +72,3 @@ export class Burger {
     }
   }
 }
-
-
-/* Меню */
-/*
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
-let siteList = document.querySelector('.site-list');
-
-navMain.classList.add('main-nav--closed');
-siteList.classList.add('site-list--closed');
-
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-    siteList.classList.remove('site-list--closed');
-    siteList.classList.add('site-list--opened');
-
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    siteList.classList.remove('site-list--closed');
-    siteList.classList.add('site-list--opened');
-  }
-});*/

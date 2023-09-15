@@ -1,3 +1,7 @@
+.about {
+  position: relative;
+}
+
 .about__wrapper {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
   &::before {
     position: absolute;
     content: "";
-    right: -10px;
+    right: 0;
     top: -159px;
     width: 50%;
     height: 51%;
