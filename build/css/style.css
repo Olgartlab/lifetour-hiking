@@ -2433,7 +2433,7 @@ button,
     letter-spacing: 0.64px;
     text-transform: uppercase;
     overflow-y: scroll;
-    max-height: 226px;
+    max-height: 33vh;
     width: 100%;
   }
 }
@@ -2442,7 +2442,7 @@ button,
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
-    max-height: 194px;
+    max-height: 55vh;
     gap: 22px;
   }
 }
@@ -3740,20 +3740,23 @@ button,
   }
 }
 
-.training__trainers h3 {
+.training__trainers h3,
+.training__activity h3 {
   margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
 }
 @media (max-width: 1199px) {
-  .training__trainers h3 {
+  .training__trainers h3,
+.training__activity h3 {
     font-size: 18px;
     line-height: 18px;
   }
 }
 @media (max-width: 767px) {
-  .training__trainers h3 {
+  .training__trainers h3,
+.training__activity h3 {
     font-size: 16px;
     line-height: 16px;
   }
