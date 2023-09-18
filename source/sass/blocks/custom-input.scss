@@ -53,7 +53,7 @@
     }
 
     &:hover(:not(:active)) {
-      border:solid 1px $color-navy-blue;
+      border: solid 1px $color-navy-blue;
 
       &::placeholder {
         color: $color-navy-blue;

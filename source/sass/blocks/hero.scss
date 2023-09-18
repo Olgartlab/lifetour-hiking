@@ -33,73 +33,127 @@
   }
 
   &--first {
-    background-image: image-set(url("../img/hero/slide-1-desktop.webp") type("image/webp"), url("../img/hero/slide-1-desktop.jpg") type("image/jpg"));
+    background-image: image-set(
+      url("../img/hero/slide-1-desktop.webp") type("image/webp"),
+      url("../img/hero/slide-1-desktop.jpg") type("image/jpg")
+    );
 
     @include retina {
-      background-image: image-set(url("../img/hero/slide-1-desktop@2x.webp") type("image/webp"), url("../img/hero/slide-1-desktop@2x.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-1-desktop@2x.webp") type("image/webp"),
+        url("../img/hero/slide-1-desktop@2x.jpg") type("image/jpg")
+      );
     }
 
     @include vp-1199 {
-      background-image: image-set(url("../img/hero/slide-1-tablet.webp") type("image/webp"), url("../img/hero/slide-1-tablet.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-1-tablet.webp") type("image/webp"),
+        url("../img/hero/slide-1-tablet.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-1-tablet@2x.webp") type("image/webp"), url("../img/hero/slide-1-tablet@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-1-tablet@2x.webp") type("image/webp"),
+          url("../img/hero/slide-1-tablet@2x.jpg") type("image/jpg")
+        );
       }
     }
 
     @include vp-767 {
-      background-image: image-set(url("../img/hero/slide-1-mobile.webp") type("image/webp"), url("../img/hero/slide-1-mobile.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-1-mobile.webp") type("image/webp"),
+        url("../img/hero/slide-1-mobile.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-1-mobile@2x.webp") type("image/webp"), url("../img/hero/slide-1-mobile@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-1-mobile@2x.webp") type("image/webp"),
+          url("../img/hero/slide-1-mobile@2x.jpg") type("image/jpg")
+        );
       }
     }
   }
 
   &--second {
-    background-image: image-set(url("../img/hero/slide-2-desktop.webp") type("image/webp"), url("../img/hero/slide-2-desktop.jpg") type("image/jpg"));
+    background-image: image-set(
+      url("../img/hero/slide-2-desktop.webp") type("image/webp"),
+      url("../img/hero/slide-2-desktop.jpg") type("image/jpg")
+    );
 
     @include retina {
-      background-image: image-set(url("../img/hero/slide-2-desktop@2x.webp") type("image/webp"), url("../img/hero/slide-2-desktop@2x.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-2-desktop@2x.webp") type("image/webp"),
+        url("../img/hero/slide-2-desktop@2x.jpg") type("image/jpg")
+      );
     }
 
     @include vp-1199 {
-      background-image: image-set(url("../img/hero/slide-2-tablet.webp") type("image/webp"), url("../img/hero/slide-2-tablet.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-2-tablet.webp") type("image/webp"),
+        url("../img/hero/slide-2-tablet.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-2-tablet@2x.webp") type("image/webp"), url("../img/hero/slide-2-tablet@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-2-tablet@2x.webp") type("image/webp"),
+          url("../img/hero/slide-2-tablet@2x.jpg") type("image/jpg")
+        );
       }
     }
 
     @include vp-767 {
-      background-image: image-set(url("../img/hero/slide-2-mobile.webp") type("image/webp"), url("../img/hero/slide-2-mobile.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-2-mobile.webp") type("image/webp"),
+        url("../img/hero/slide-2-mobile.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-2-mobile@2x.webp") type("image/webp"), url("../img/hero/slide-2-mobile@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-2-mobile@2x.webp") type("image/webp"),
+          url("../img/hero/slide-2-mobile@2x.jpg") type("image/jpg")
+        );
       }
     }
   }
 
   &--third {
-    background-image: image-set(url("../img/hero/slide-3-desktop.webp") type("image/webp"), url("../img/hero/slide-3-desktop.jpg") type("image/jpg"));
+    background-image: image-set(
+      url("../img/hero/slide-3-desktop.webp") type("image/webp"),
+      url("../img/hero/slide-3-desktop.jpg") type("image/jpg")
+    );
 
     @include retina {
-      background-image: image-set(url("../img/hero/slide-3-desktop@2x.webp") type("image/webp"), url("../img/hero/slide-3-desktop@2x.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-3-desktop@2x.webp") type("image/webp"),
+        url("../img/hero/slide-3-desktop@2x.jpg") type("image/jpg")
+      );
     }
 
     @include vp-1199 {
-      background-image: image-set(url("../img/hero/slide-3-tablet.webp") type("image/webp"), url("../img/hero/slide-3-tablet.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-3-tablet.webp") type("image/webp"),
+        url("../img/hero/slide-3-tablet.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-3-tablet@2x.webp") type("image/webp"), url("../img/hero/slide-3-tablet@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-3-tablet@2x.webp") type("image/webp"),
+          url("../img/hero/slide-3-tablet@2x.jpg") type("image/jpg")
+        );
       }
     }
 
     @include vp-767 {
-      background-image: image-set(url("../img/hero/slide-3-mobile.webp") type("image/webp"), url("../img/hero/slide-3-mobile.jpg") type("image/jpg"));
+      background-image: image-set(
+        url("../img/hero/slide-3-mobile.webp") type("image/webp"),
+        url("../img/hero/slide-3-mobile.jpg") type("image/jpg")
+      );
 
       @include retina {
-        background-image: image-set(url("../img/hero/slide-3-mobile@2x.webp") type("image/webp"), url("../img/hero/slide-3-mobile@2x.jpg") type("image/jpg"));
+        background-image: image-set(
+          url("../img/hero/slide-3-mobile@2x.webp") type("image/webp"),
+          url("../img/hero/slide-3-mobile@2x.jpg") type("image/jpg")
+        );
       }
     }
   }
@@ -196,7 +250,6 @@
   gap: 10px;
   width: 50%;
 
-
   @include vp-1199 {
     display: none;
   }
@@ -235,9 +288,9 @@
   right: 120px;
 
   img {
-  width: 410px;
-  height: 459px;
-  z-index: 0;
+    width: 410px;
+    height: 459px;
+    z-index: 0;
   }
 
   @include vp-1199 {
@@ -245,8 +298,8 @@
     margin: 0 auto;
 
     img {
-    width: 442px;
-    height: 365px;
+      width: 442px;
+      height: 365px;
     }
   }
 

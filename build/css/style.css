@@ -3383,14 +3383,9 @@ button,
   -ms-flex-line-pack: end;
       align-content: end;
 }
-@media (max-width: 767px) {
-  .tours__slide-content {
-    padding-top: 197px;
-  }
-}
 .tours__slide-content h3 {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 38px;
   padding: 0;
   font-size: 24px;
   font-style: normal;
@@ -5989,6 +5984,11 @@ form .connection__button {
           align-items: start;
   padding-top: 97px;
 }
+@media (max-width: 1199px) {
+  .contacts__map-wrapper {
+    padding-top: 0;
+  }
+}
 
 .contacts__map {
   width: 585px;
@@ -6165,6 +6165,7 @@ form .connection__button {
        -moz-column-gap: 30px;
             column-gap: 30px;
     width: 100%;
+    max-width: unset;
     padding-bottom: 15px;
     margin: 0;
   }
@@ -6265,9 +6266,6 @@ form .connection__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

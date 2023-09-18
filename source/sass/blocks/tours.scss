@@ -70,6 +70,7 @@
     width: 100%;
     height: 150%;
     background-image: image-set(url("../img/clouds/big-clouds-desktop.webp") type("image/webp"), url("../img/tours/big-clouds-desktop.jpg") type("image/jpg"));
+
     @include retina {
       background-image: image-set(url("../img/clouds/big-clouds-desktop@2x.webp") type("image/webp"), url("../img/tours/big-clouds-desktop@2x.jpg") type("image/jpg"));
     }
@@ -81,6 +82,7 @@
 
     @include vp-1199 {
       background-image: image-set(url("../img/clouds/big-clouds-tablet.webp") type("image/webp"), url("../img/tours/big-clouds-tablet.jpg") type("image/jpg"));
+
       @include retina {
         background-image: image-set(url("../img/clouds/big-clouds-tablet@2x.webp") type("image/webp"), url("../img/tours/big-clouds-tablet@2x.jpg") type("image/jpg"));
       }
@@ -91,6 +93,7 @@
     @include vp-767 {
       top: 2.6%;
       background-image: image-set(url("../img/clouds/big-clouds-mobile.webp") type("image/webp"), url("../img/tours/big-clouds-mobile.jpg") type("image/jpg"));
+
       @include retina {
         background-image: image-set(url("../img/clouds/big-clouds-mobile@2x.webp") type("image/webp"), url("../img/tours/big-clouds-mobile@2x.jpg") type("image/jpg"));
       }
@@ -292,13 +295,10 @@
   position: relative;
   align-content: end;
 
-  @include vp-767 {
-    padding-top: 197px;
-  }
 
   h3 {
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 38px;
     padding: 0;
     font-size: 24px;
     font-style: normal;
