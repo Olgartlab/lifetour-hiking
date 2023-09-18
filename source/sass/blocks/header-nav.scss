@@ -1,8 +1,23 @@
+.header-nav__wrapper {
+  width: 100%;
+}
+
 .header-nav__list {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 31px;
+  flex-wrap: wrap;
+  gap: 10px 31px;
+  max-width: 586px;
+
+  @media  (min-width: 1200px) and (max-width: 1280px) {
+    column-gap: 20px;
+  }
+
+  @include vp-1199 {
+    flex-wrap: nowrap;
+    max-width: unset;
+  }
 }
 
 .header-nav__link {

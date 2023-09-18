@@ -207,7 +207,8 @@
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  align-items: end;
+  align-items: start;
+  padding-top: 97px;
 }
 
 .contacts__map {

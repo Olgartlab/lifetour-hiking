@@ -163,10 +163,12 @@
 
   @include vp-1199 {
     max-width: 50%;
+    aspect-ratio: 324/412;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     max-width: 100%;
+    aspect-ratio: 290/412;
   }
 
   &::before {
@@ -282,12 +284,13 @@
 
 .tours__slide-content {
   color: $color-default-white;
-  padding: 206px 20px 28px 20px;
+  padding: 50px 20px 28px 20px;
   display: grid;
   grid-template-rows: min-content auto min-content;
   height: 100%;
   z-index: 0;
   position: relative;
+  align-content: end;
 
   @include vp-767 {
     padding-top: 197px;
@@ -303,10 +306,15 @@
     line-height: 28px;
     max-width: 240px;
 
+    @include vp-1199 {
+      margin-bottom: 37px;
+    }
+
     @include vp-767 {
       line-height: 24px;
       font-size: 20px;
       padding-right: 15px;
+      margin-bottom: 28px;
     }
   }
 }
@@ -323,11 +331,6 @@
   font-weight: 500;
   line-height: 12px;
 
-  @include vp-1199 {
-    gap: 14px;
-    justify-content: stretch;
-  }
-
   @media (min-width: 1200px) and (max-width: 1300px) {
     margin-left: -10px;
     margin-right: -5px;
@@ -338,8 +341,7 @@
     flex-wrap: wrap;
     gap: 15px 10px;
     margin-bottom: 15px;
-    max-width: 190px;
-    justify-content: stretch;
+    width: 64%;
   }
 }
 
@@ -374,10 +376,21 @@
 
   @include vp-1199 {
     justify-content: flex-start;
+    width: 76px;
+
+    &--nights {
+      margin-right: 18px;
+      width: 82px;
+    }
   }
 
   @include vp-767 {
     justify-content: stretch;
+    width: 46%;
+
+    &--nights {
+      margin-right: 0;
+    }
   }
 
   svg {
@@ -451,7 +464,6 @@
 
   p {
     font-size: 12px;
-
     font-weight: 300;
     line-height: 12px;
     margin: 0;

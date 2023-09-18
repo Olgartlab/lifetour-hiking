@@ -111,8 +111,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
+  align-items: flex-end;
 
   @include vp-1199 {
+    align-items: unset;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
     row-gap: 91px;
@@ -179,12 +181,14 @@
 
   svg {
     flex-shrink: 0;
-    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: 14px;
 
     @include vp-767 {
       width: 19px;
       height: 19px;
       margin-top: 7px;
+      margin-bottom: 0;
     }
   }
 }

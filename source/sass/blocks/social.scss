@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   width: 120px;
+  flex-wrap: wrap;
+  gap: 15px;
 
   @include vp-767 {
     margin-right: auto;

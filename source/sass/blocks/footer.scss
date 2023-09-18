@@ -45,6 +45,7 @@
 .footer__logo-link {
   fill: $color-primary;
   display: flex;
+  margin-right: 104px;
 
   &:disabled {
     svg {
@@ -73,6 +74,10 @@
     }
   }
 
+  @include vp-1199 {
+    margin-right: 0;
+  }
+
   @include vp-767 {
     width: 100%;
     padding-bottom: 15px;
@@ -93,7 +98,7 @@
 .footer__nav-list {
   padding: 0;
   margin: 0;
-  margin-right: 63px;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   max-width: 725px;
@@ -103,6 +108,7 @@
     margin-right: 5px;
     column-gap: 21px;
     padding-top: 5px;
+    max-width: 70%;
   }
 
   @include vp-767 {
@@ -116,12 +122,20 @@
 }
 
 .footer__nav-item {
+  padding-bottom: 8px;
+
+
+  @include vp-1199 {
+    padding-bottom: 15px;
+  }
+
   @include vp-767 {
     padding-bottom: 15px;
   }
 }
 
 .footer__nav-link {
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
@@ -149,6 +163,12 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  display: flex;
+  max-width: 160px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding-left: 10px;
 
   @include vp-1199 {
     display: none;
@@ -157,6 +177,7 @@
 
 .footer__phone-wrapper a {
   color: $color-primary;
+  padding-bottom: 8px;
 
   &:disabled {
     color: $color-disabled;

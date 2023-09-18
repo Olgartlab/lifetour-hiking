@@ -52,7 +52,7 @@
       color: transparent;
     }
 
-    &:hover {
+    &:hover(:not(:active)) {
       border:solid 1px $color-navy-blue;
 
       &::placeholder {
