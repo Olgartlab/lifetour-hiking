@@ -46,6 +46,7 @@
   fill: $color-primary;
   display: flex;
   margin-right: 104px;
+  pointer-events: none;
 
   &:disabled {
     svg {

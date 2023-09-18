@@ -2337,6 +2337,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  pointer-events: none;
 }
 .header__logo-link:disabled {
   opacity: 0.1;
@@ -2417,7 +2418,8 @@ button,
 @media (max-width: 767px) {
   .header.is-open .header__nav {
     top: 69px;
-    padding: 30px 15px 50px;
+    padding: 0 15px 0;
+    max-height: calc(100% - 74px);
   }
 }
 
@@ -2442,8 +2444,8 @@ button,
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
-    max-height: 55vh;
     gap: 22px;
+    padding: 30px 0 50px;
   }
 }
 
@@ -2486,6 +2488,7 @@ button,
   font-weight: 600;
   line-height: 18px;
   padding-bottom: 8px;
+  padding-top: 8px;
   max-width: 142px;
 }
 .header__phone:disabled {
@@ -2515,6 +2518,7 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0;
   }
 }
 
@@ -6085,6 +6089,7 @@ form .connection__button {
   display: -ms-flexbox;
   display: flex;
   margin-right: 104px;
+  pointer-events: none;
 }
 .footer__logo-link:disabled svg {
   opacity: 0.1;

@@ -81,6 +81,7 @@
 .header__logo-link {
   color: $color-default-white;
   display: flex;
+  pointer-events: none;
 
   &:disabled {
     opacity: 0.1;
@@ -154,7 +155,6 @@
   top: 74px;
   right: 0;
   margin: 0;
-  //padding: 50px 45px 70px;
   max-height: calc(100% - 74px);
   padding: 0 45px 0;
   width: 100%;
@@ -162,7 +162,8 @@
 
   @include vp-767 {
     top: 69px;
-    padding: 30px 15px 50px;
+    padding: 0 15px 0;
+    max-height: calc(100% - 74px);
   }
 }
 
@@ -183,8 +184,8 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
-    max-height: 55vh;
     gap: 22px;
+    padding: 30px 0 50px;
   }
 }
 
@@ -218,6 +219,7 @@
   font-weight: 600;
   line-height: 18px;
   padding-bottom: 8px;
+  padding-top: 8px;
   max-width: 142px;
 
   &:disabled {
@@ -247,5 +249,6 @@
     font-size: 14px;
     line-height: 14px;
     display: flex;
+    padding-top: 0;
   }
 }
