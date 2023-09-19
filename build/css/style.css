@@ -2260,9 +2260,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (max-width: 1199px) {
   .header__wrapper {
@@ -2298,12 +2298,14 @@ button,
     cursor: pointer;
     position: relative;
     z-index: 5;
+    margin-top: 9px;
   }
 }
 @media (max-width: 767px) {
   .header__toggle {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-top: 0;
   }
 }
 
@@ -2452,6 +2454,7 @@ button,
 .header__nav {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 20px;
 }
 @media (max-width: 1199px) {
   .header__nav {
@@ -2470,6 +2473,13 @@ button,
       -ms-flex-pack: end;
           justify-content: flex-end;
   max-width: 142px;
+  padding-top: 20px;
+}
+@media (max-width: 1199px) {
+  .header__phone-wrapper {
+    padding-top: 8px;
+    max-width: 126px;
+  }
 }
 @media (max-width: 767px) {
   .header__phone-wrapper {
@@ -2479,6 +2489,7 @@ button,
     margin: 0;
     margin-left: auto;
     text-align: end;
+    padding-top: 0;
   }
 }
 
@@ -6058,9 +6069,9 @@ form .connection__button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-bottom: 14px;
 }
 @media (max-width: 1199px) {
@@ -6088,7 +6099,6 @@ form .connection__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 104px;
   pointer-events: none;
 }
 .footer__logo-link:disabled svg {
@@ -6134,16 +6144,23 @@ form .connection__button {
 .footer__nav-list {
   padding: 0;
   margin: 0;
-  margin-right: auto;
+  padding-right: 78px;
+  padding-left: 15px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 725px;
-  -webkit-column-gap: 32px;
-     -moz-column-gap: 32px;
-          column-gap: 32px;
+  max-width: 764px;
+  gap: 10px 32px;
+}
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .footer__nav-list {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
 }
 @media (max-width: 1199px) {
   .footer__nav-list {
@@ -6152,6 +6169,8 @@ form .connection__button {
        -moz-column-gap: 21px;
             column-gap: 21px;
     padding-top: 5px;
+    padding-right: 0;
+    padding-left: 0;
     max-width: 70%;
   }
 }
@@ -6168,6 +6187,8 @@ form .connection__button {
     max-width: unset;
     padding-bottom: 15px;
     margin: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -6212,6 +6233,7 @@ form .connection__button {
   display: -ms-flexbox;
   display: flex;
   max-width: 160px;
+  min-width: 142px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
@@ -6219,7 +6241,7 @@ form .connection__button {
           justify-content: flex-end;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding-left: 10px;
+  padding-top: 20px;
 }
 @media (max-width: 1199px) {
   .footer__phone-wrapper {

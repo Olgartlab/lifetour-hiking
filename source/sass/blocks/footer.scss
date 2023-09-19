@@ -26,7 +26,7 @@
   line-height: 16px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 14px;
 
   @include vp-1199 {
@@ -45,7 +45,6 @@
 .footer__logo-link {
   fill: $color-primary;
   display: flex;
-  margin-right: 104px;
   pointer-events: none;
 
   &:disabled {
@@ -99,16 +98,24 @@
 .footer__nav-list {
   padding: 0;
   margin: 0;
-  margin-right: auto;
+  padding-right: 78px;
+  padding-left: 15px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 725px;
-  column-gap: 32px;
+  max-width: 764px;
+  gap: 10px 32px;
+
+  @media (min-width: 1200px) and (max-width: 1280px) {
+    column-gap: 20px;
+  }
 
   @include vp-1199 {
     margin-right: 5px;
     column-gap: 21px;
     padding-top: 5px;
+    padding-right: 0;
+    padding-left: 0;
     max-width: 70%;
   }
 
@@ -120,6 +127,8 @@
     max-width: unset;
     padding-bottom: 15px;
     margin: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -166,10 +175,11 @@
   line-height: 18px;
   display: flex;
   max-width: 160px;
+  min-width: 142px;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
-  padding-left: 10px;
+  padding-top: 20px;
 
   @include vp-1199 {
     display: none;
